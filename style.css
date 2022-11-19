@@ -1,0 +1,136 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Main */
+
+body{
+    background-image:url('./bg-desktop.svg');
+    background-color: var(--Violet);
+    color: #fff;
+    margin: 50px 130px 50px 70px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.body-content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+.social-media{
+    float: right;
+}
+.huddle-logo{
+    width: 200px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.left-half, .right-half{
+    width: auto;
+    margin: 10px ;
+}
+.image{
+    width: 700px;
+}
+.right-half{
+    margin-left: 50px;
+}
+.build{
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size: 40px;
+    padding: 0 60px 0 0;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size:19px;
+    line-height: 1.5;
+}
+button{
+    padding: 15px 75px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color:var(--Violet);
+    border-radius: 50px;
+    border:none;
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    margin-top: 15px;
+}
+button:hover{
+    background-color: var(--Soft-Magenta);
+    color: #fff;
+}
+.social-media{
+    display: flex;
+    margin-top: 20px;
+}
+.icon{
+    margin: 0 10px;
+    border:1px solid #fff;
+    padding:10px;
+    border-radius: 100px;
+    cursor: pointer;
+    color: #fff;
+}
+.icon-fb{
+    padding: 10px 13.5px;
+}
+.icon:hover{
+    border:1px solid var(--Soft-Magenta);
+    color: var(--Soft-Magenta);
+}
+
+@media only screen and (max-width: 900px) {
+    body{
+        background-image: url('./bg-mobile.svg');
+        background-repeat: no-repeat;
+        background-color: var(--Violet);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 55px 5px 10px 5px;
+    }
+    .image{
+        width: 85%;
+    }
+    
+    .body-content{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .right-half{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .build{
+        margin-top: 30px;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+    }
+    p{
+        font-size: 17px;
+        padding: 0 15px;
+    }
+    .social-media{
+        margin-top: 100px;
+    }
+    .huddle-logo{
+        float: left;
+        padding-left: 32px;
+    }
+}
